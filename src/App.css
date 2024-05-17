@@ -1,0 +1,17 @@
+@font-face {
+    font-family:indosign ;
+    src: url(./assets/font/Indosign.ttf);
+}
+
+@font-face {
+    font-family:dsans ;
+    src: url(./assets/font/DMSans-Regular.ttf);
+}
+
+h1{
+    font-family: indosign;
+}
+
+p,li{
+    font-family: dsans;
+}
