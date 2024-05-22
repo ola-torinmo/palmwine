@@ -6,6 +6,8 @@ import Edition from "./Edition";
 import Slider from "./Slider";
 import Poster from "./Poster";
 import Newsletter from "./Newsletter";
+import PTposter from "./PTposter";
+import PTabout from "./PTabout";
 import Footer from "./Footer";
 
-export {Navbar,Hero,Jumbotron,Meet,Edition,Footer,Slider,Poster,Newsletter}
+export {Navbar,Hero,Jumbotron,Meet,Edition,Footer,Slider,Poster,Newsletter,PTposter,PTabout}

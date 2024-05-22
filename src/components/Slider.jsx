@@ -29,8 +29,8 @@ const Slider = () => {
         ul.insertAdjacentHTML('afterend', ul.outerHTML);
         ul.nextSibling.setAttribute('aria-hidden', 'true');
     })"
-    class="w-full inline-flex flex-nowrap overflow-hidden py-[5%]">
-    <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+    class="w-full inline-flex flex-nowrap overflow-hidden py-[2.5%]">
+    <ul x-ref="logos" class="flex items-center justify-center md:justify-start [&_li]:mx-5 [&_img]:max-w-none animate-infinite-scroll">
         <li>
             <img src={e1} className='w-[500px] h-[371px]' />
         </li>

@@ -19,9 +19,9 @@ const Navbar = ()=>{
                 </Link>
                 <div className="hidden md:flex items-center">
                 <ul className="flex gap-6 2xl:gap-12 pr-[150px] ipad-v:text-[13px] text-[16px] text-[#C3C3C3] ml-[-20%] ">
-                    <li><Link to="/about">The Palmtree</Link></li>
-                    <li><Link to="/service">About</Link></li>
-                    <li><Link to="/project">Events</Link></li>
+                    <li><Link to="/palmtree">The Palmtree</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/event">Events</Link></li>
                     
                 </ul>
                 <Link to="/">

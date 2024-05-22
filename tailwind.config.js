@@ -15,7 +15,7 @@ export default {
         'xs': {'min':'360px','max':'360px'},
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 50s linear infinite',
+        'infinite-scroll': 'infinite-scroll 55s linear infinite',
       },
       keyframes: {
         'infinite-scroll': {
