@@ -2,8 +2,9 @@ import React,{ useState } from "react";
 import logo from "../assets/logo.png"
 import close from "../assets/close.svg"
 import hamburgerMenu from "../assets/hamburgermenu.svg"
-import tick from "../assets/tickets.png"
+import tick from "../assets/ticket.svg"
 import { Link } from 'react-router-dom';
+import '../App.css'
 
 
 const Navbar = ()=>{
@@ -25,7 +26,7 @@ const Navbar = ()=>{
                 </ul>
                 <Link to="/">
                     <button className="bg-[#C4942D] text-[#101010] w-[131px] h-[40px] rounded-full text-sm ml-[140%] flex ">
-                       <img src={tick} className="mr-1 ml-7 mt-2" />
+                       <img src={tick} className="mr-1 ml-7 mt-3" />
                        <p className="mt-2.5 font-medium" > Tickets</p>
                     </button>
                 </Link>

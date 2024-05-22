@@ -1,4 +1,5 @@
 import './App.css'
+import Alpine from 'alpinejs'
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import Event from './pages/Event';
@@ -9,6 +10,7 @@ import Event from './pages/Event';
 // import QA from './pages/QA';
 
 function App() {
+  Alpine.start()
 
   return (
     <div>
