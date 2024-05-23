@@ -5,7 +5,8 @@ const Newsletter = () => {
     <section className="bg-[#121212]">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-12 lg:px-6">
             <div className="mx-auto max-w-screen-md sm:text-center">
-                <p className="mx-auto mb-4 max-w-2xl font-light  md:mb-6 text-white text-[16px]">Subscribe to our newsletter to stay updated with our latest events.</p>
+            <h1 class="mb-4  tracking-tight font-medium md:text-[50px] text-[30px] text-[#FDC448] text-center">Newsletter</h1>
+                <p className="mx-auto mb-4 max-w-2xl font-light  md:mb-6 text-white text-[16px] text-center">Subscribe to our newsletter to stay updated with our latest events.</p>
                 <form action="#">
                     <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                         <div className="relative w-full">

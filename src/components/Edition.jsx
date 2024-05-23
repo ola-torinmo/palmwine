@@ -17,7 +17,7 @@ const Edition = () => {
       <div className='pt-[20px]'>
         <div className='text-center pb-[40px]'>
           <h1 className='md:text-[50px] text-[30px] mb-5'>The PalmTree</h1>
-          <p className='text-[16px]'>The PalmTree is wherever our community is. Everyone is welcome! JUST BE GOOD VIBES!! </p>
+          <p className='text-[16px] w-[90%] mx-auto'>The PalmTree is wherever our community is. Everyone is welcome! JUST BE GOOD VIBES!! </p>
         </div>
         <div className='md:flex pb-[40px]  '>
           <img src={edi2} alt="" className='md:mb-[0%] mb-[7%] mr-6 md:w-[285px] w-[90%] md:ml-[0%] ml-[5%]' data-aos="fade-up" />
