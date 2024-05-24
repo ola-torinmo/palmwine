@@ -16,9 +16,13 @@ const Newsletter = () => {
                             </div>
                             <input className="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg" placeholder="Enter your email" type="email" id="email" required=""/>
                         </div>
+                        
                         <div>
-                            <button type="submit" className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-[#FDC448] border-[#FDC448] sm:rounded-none sm:rounded-r-lg hover:bg-[#FDC448]-800  ">Subscribe</button>
+                            
+                        <button type="submit" className="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-[#FDC448] border-[#FDC448] sm:rounded-none sm:rounded-r-lg hover:bg-[#FDC448]-800  ">Subscribe</button>
+                           
                         </div>
+                        
                     </div>
                 </form>
             </div>

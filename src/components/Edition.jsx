@@ -13,21 +13,21 @@ const Edition = () => {
   },[]) 
 
   return (
-    <div className='w-[100%] bg-[#FDC448] flex justify-center'>
+    <div className='w-full bg-[#FDC448] flex justify-center'>
       <div className='pt-[20px]'>
         <div className='text-center pb-[40px]'>
           <h1 className='md:text-[50px] text-[30px] mb-5'>The PalmTree</h1>
           <p className='text-[16px] w-[90%] mx-auto'>The PalmTree is wherever our community is. Everyone is welcome! JUST BE GOOD VIBES!! </p>
         </div>
         <div className='md:flex pb-[40px]  '>
-          <img src={edi2} alt="" className='md:mb-[0%] mb-[7%] mr-6 md:w-[285px] w-[90%] md:ml-[0%] ml-[5%]' data-aos="fade-up" />
-          <img src={edi3} alt="" className='md:mb-[0%] mb-[7%] mr-6 md:w-[285px] w-[90%] md:ml-[0%] ml-[5%]' data-aos="fade-up" />
-          <img src={edi1} alt="" className='md:mb-[0%] mb-[7%] mr-6 md:w-[285px] w-[90%] md:ml-[0%] ml-[5%]' data-aos="fade-up" />
+          <img src={edi2} alt="" className='md:mb-[0%] mb-[7%] md:mr-6 md:w-[285px] w-[90%] md:ml-[0%] ml-[5%]' data-aos="fade-up" />
+          <img src={edi3} alt="" className='md:mb-[0%] mb-[7%] md:mr-6 md:w-[285px] w-[90%] md:ml-[0%] ml-[5%]' data-aos="fade-up" />
+          <img src={edi1} alt="" className='md:mb-[0%] mb-[7%] md:mr-6 md:w-[285px] w-[90%] md:ml-[0%] ml-[5%]' data-aos="fade-up" />
           <img src={edi4} alt="" className='md:w-[285px] w-[90%] md:ml-[0%] ml-[5%]' data-aos="fade-up" />
         </div>
         <div className='grid justify-items-center pb-[30px]'>
-        <Link to="/">
-                    <button className="bg-black text-white w-[169px] h-[53px] rounded-full text-md text-normal text-center hover:ease-in duration-300">
+        <Link to="/palmtree">
+                    <button className="bg-black text-white w-[169px] h-[53px] rounded-full text-md text-normal text-center">
                        
                        <p className="" >Find more here</p>
                     </button>
