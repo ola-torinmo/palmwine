@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 
 const Newsletter = () => {
 
-    const  [formState, setFormState] =useState({});
+    const  [formState, setFormState] =useState({
+      email: ''
+    });
   const changeHandler =(event) =>{
    setFormState({...formState,[event.target.name]:event.target.value});
   };
@@ -12,16 +14,37 @@ const Newsletter = () => {
 
     const config ={
       SecureToken : '8aa058b5-701d-4c09-947f-9c6492d7f649',
-      Port : 2525 ,
       To : 'palmwineandfriendsng@gmail.com',
       From : formState.email,
       Subject : "This user will show up!",
       Body : `${formState.name} connected to you over mail`
 
     };
-    if (window.Email){
-      window.Email.send(config).then(() => alert('success'));
+    // if (window.Email){
+    //   window.Email.send(config)
+    //   .then(() => alert('success'))
+    //   .catch((error) => console.error('Failed to send email:', error));
+    // }
+    if (window.Email) {
+      window.Email.send(config)
+        .then(() => {
+          alert('Success');
+          console.log('Email sent successfully:', config);
+        })
+        .catch((error) => {
+          console.error('Failed to send email:', error);
+          alert('Failed to send email');
+        });
+    } else {
+      console.error('window.Email is not available');
+      alert('Email service is not available');
     }
+
+    // Reset the form state
+    setFormState({
+      email: ''
+    });
+
     event.target.reset()
 
   };
@@ -38,7 +61,7 @@ const Newsletter = () => {
                             <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                                 <svg className="w-5 h-5 text-gray-500 " fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
                             </div>
-                            <input onChange={changeHandler} className="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg" placeholder="Enter your email" type="email" id="email" required=""/>
+                            <input onChange={changeHandler} value={formState.email} className="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg" placeholder="email" type="email" name="email"  required/>
                         </div>
                         
                         <div>
