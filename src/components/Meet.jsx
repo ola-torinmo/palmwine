@@ -15,7 +15,7 @@ const Meet = () => {
     <div className='text-white pt-[10%] ' data-aos="fade-up">
         <h1 className='md:text-[50px] text-[30px] md:text-left text-center pb-3'>Meet Plamwine</h1>
         <img src={line} className='md:pb-3 pb-[30px] md:w-[463px] w-[70%] md:ml-[0px] ml-[15%]' />
-        <p className='md:w-[500px] w-[80%] md:text-left text-center md:ml-[0px] ml-[10%] md:pb-[0%] pb-[30px]'>Say hi to Palmwine. Our resident vibes in chief, the pied piper himself as he hypnotizes ragers and ravers with his contagious sound and energy that gets you partying till your legs give out.</p>
+        <p className='md:w-[500px] w-[80%] md:text-left text-left md:ml-[0px] ml-[10%] md:pb-[0%] pb-[30px]'>Say hi to Palmwine. Our resident vibes-in-chief, the pied piper himself as he hypnotizes ragers and ravers with his contagious sound and energy that gets you partying till your legs give out!.</p>
     </div>
     <div className='pt-[10%]'>
 

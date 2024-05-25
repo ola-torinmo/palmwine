@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.css'
 import Navbar from '../components/Navbar'
-import Newsletter from '../components/Newsletter'
+// import Newsletter from '../components/Newsletter'
 import  Footer  from '../components/Footer'
 import PTabout  from '../components/PTabout'
 
@@ -10,7 +10,7 @@ const About = () => {
     <>
     <Navbar/>
     <PTabout/>
-    <Newsletter/>
+    {/* <Newsletter/> */}
     <Footer/>
   </>
   )

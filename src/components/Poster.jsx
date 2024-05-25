@@ -36,9 +36,9 @@ const Poster = () => {
             </div>
             <div className=''> 
                 <Link to="/">
-                        <button className="bg-[#C4942D] text-[#101010] w-[80%] h-[40px] rounded-full text-sm   md:mb-[0] mb-[10%] ml-[10%]  ">
+                        <button className="bg-[#C4942D] text-[#101010] w-[80%] h-[50px] rounded-full text-md   md:mb-[0] mb-[5%] ml-[10%]  ">
                           
-                          <p className=" font-medium" > Subscribe to our newsletter</p>
+                          <p className=" font-bold" > Subscribe to our newsletter</p>
                         </button>
                 </Link>
             </div>

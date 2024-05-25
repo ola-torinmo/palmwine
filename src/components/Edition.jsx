@@ -20,9 +20,9 @@ const Edition = () => {
           <p className='text-[16px] w-[90%] mx-auto'>The PalmTree is wherever our community is. Everyone is welcome! JUST BE GOOD VIBES!! </p>
         </div>
         <div className='md:flex pb-[40px]  '>
+          <img src={edi1} alt="" className='md:mb-[0%] mb-[7%] md:mr-6 md:w-[285px] w-[90%] md:ml-[0%] ml-[5%]' data-aos="fade-up" />
           <img src={edi2} alt="" className='md:mb-[0%] mb-[7%] md:mr-6 md:w-[285px] w-[90%] md:ml-[0%] ml-[5%]' data-aos="fade-up" />
           <img src={edi3} alt="" className='md:mb-[0%] mb-[7%] md:mr-6 md:w-[285px] w-[90%] md:ml-[0%] ml-[5%]' data-aos="fade-up" />
-          <img src={edi1} alt="" className='md:mb-[0%] mb-[7%] md:mr-6 md:w-[285px] w-[90%] md:ml-[0%] ml-[5%]' data-aos="fade-up" />
           <img src={edi4} alt="" className='md:w-[285px] w-[90%] md:ml-[0%] ml-[5%]' data-aos="fade-up" />
         </div>
         <div className='grid justify-items-center pb-[30px]'>
