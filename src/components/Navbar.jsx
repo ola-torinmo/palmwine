@@ -12,7 +12,7 @@ const Navbar = ()=>{
     const handleClick = ()=> setToggle(!toggle)
 
     return(
-        <div className="w-full h-[70px] bg-[#121212] md:py-[1%] py-[13%]">
+        <div className="w-full h-[70px] bg-[#121212] md:py-[5%] py-[13%]">
             <div className='md:max-w-[1028px] max-w-[600px] 2xl:max-w-[1536px] m-auto w-full h-full flex justify-between items-center md:px-0 px-6 ipad-prov:px-[5%] ipad-v:px-[3%] md:ml-[0.5%]'>
                 <Link to="/">
                 <img src={logo} className="md:h-[50px] h-[40px] md:w-[100px] w-[80px] md:ml-[60%] ml-[10%] " alt="" />
