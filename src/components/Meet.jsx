@@ -11,7 +11,7 @@ const Meet = () => {
   },[])
 
   return (
-    <div className='w-full bg-[#121212] md:flex justify-around pb-[10%]'>
+    <div className='w-full bg-[#121212] md:flex justify-around pb-[10%] md:my-[0%] my-[10%] '>
     <div className='text-white pt-[10%] ' data-aos="fade-up">
         <h1 className='md:text-[50px] text-[30px] md:text-left text-left md:ml-[0%] ml-[11%] pb-3'>Meet Palmwine</h1>
         <img src={line} className='md:pb-3 pb-[30px] md:w-[463px] w-[80%] md:ml-[0px] ml-[10%]' />

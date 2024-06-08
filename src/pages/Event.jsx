@@ -3,6 +3,7 @@ import '../App.css'
 import Navbar from '../components/Navbar'
 import  Slider  from '../components/Slider'
 import Poster from '../components/Poster'
+import { ScrollProvider } from '../components/ScrollContext';
 import Newsletter from '../components/Newsletter'
 import  Footer  from '../components/Footer'
 import e1 from '../assets/e1.png'
@@ -28,6 +29,7 @@ import e16 from '../assets/e16.png'
 function Event() {
   return (
     <>
+    <ScrollProvider>
       
       <Navbar/>
       <Slider
@@ -50,6 +52,8 @@ function Event() {
       <Poster/>
       <Newsletter/>
       <Footer/>
+
+      </ScrollProvider>
     </>
   )
 }

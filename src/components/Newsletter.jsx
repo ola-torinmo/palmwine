@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
-
+import { useScroll } from './ScrollContext';
 const Newsletter = () => {
+
+  const subscribe = useScroll();
+
 
     const  [formState, setFormState] =useState({
       email: ''
@@ -12,33 +15,65 @@ const Newsletter = () => {
   const submitHandler=(event)=>{
     event.preventDefault();
 
-    const config ={
-      SecureToken : '8aa058b5-701d-4c09-947f-9c6492d7f649',
-      To : 'palmwineandfriendsng@gmail.com',
-      From : formState.email,
-      Subject : "This user will show up!",
-      Body : `${formState.name} connected to you over mail`
 
-    };
-    // if (window.Email){
+
+
+    
+  // Data to be sent to the server
+  const userData = {
+    
+    email: formState.email,
+    
+  };
+
+      // POST data to the server
+      fetch('http://localhost:3000/send-email', {
+        method: 'POST', // Specify the request method
+        headers: {
+          'Content-Type': 'application/json' // Specify the content type
+        },
+        body: JSON.stringify(userData) // Convert the data to a JSON string
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Success:', data);
+      })
+      .catch(error => {
+        console.error('There was a problem with your fetch operation:', error);
+      });
+
+
+    // formState.email
+    // const config ={
+    //   SecureToken : '8aa058b5-701d-4c09-947f-9c6492d7f649',
+    //   From :'ajibadeemmanuel58@gmail.com ' ,
+    //   To : 'torinmo.ade@gmail.com',
+      
+    //   Subject : "This user will show up!",
+    //   Body : `${formState.name} connected to you over mail`
+
+    // };
+    
+    // if (window.Email) {
     //   window.Email.send(config)
-    //   .then(() => alert('success'))
-    //   .catch((error) => console.error('Failed to send email:', error));
+    //     .then((response) => {
+    //       console.log(response)
+    //       alert('Success');
+    //       console.log('Email sent successfully:', config);
+    //     })
+    //     .catch((error) => {
+    //       console.error('Failed to send email:', error);
+    //       alert('Failed to send email');
+    //     });
+    // } else {
+    //   console.error('window.Email is not available');
+    //   alert('Email service is not available');
     // }
-    if (window.Email) {
-      window.Email.send(config)
-        .then(() => {
-          alert('Success');
-          console.log('Email sent successfully:', config);
-        })
-        .catch((error) => {
-          console.error('Failed to send email:', error);
-          alert('Failed to send email');
-        });
-    } else {
-      console.error('window.Email is not available');
-      alert('Email service is not available');
-    }
 
     // Reset the form state
     setFormState({
@@ -48,13 +83,13 @@ const Newsletter = () => {
     event.target.reset()
 
   };
+
   return (
     <section className="bg-[#121212]">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-12 lg:px-6">
             <div className="mx-auto max-w-screen-md sm:text-center">
-            {/* <h1 class="mb-4  tracking-tight font-medium md:text-[50px] text-[30px] text-[#FDC448] text-center">Newsletter</h1> */}
                 <p className="mx-auto mb-4 max-w-2xl font-light  md:mb-6 text-white text-[16px] text-center">Subscribe to our newsletter to stay updated with our latest events.</p>
-                <form onSubmit={submitHandler}>
+                <form ref={subscribe} onSubmit={submitHandler}>
                     <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                         <div className="relative w-full">
                             <label for="email" className="hidden mb-2 text-sm font-medium text-gray-900 ">Email address</label>
