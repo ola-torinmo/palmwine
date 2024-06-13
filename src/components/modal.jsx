@@ -62,11 +62,10 @@ const Modal = ({ showModal, setShowModal }) => {
 
               <div className="p-6 flex flex-col justify-center items-center md:pt-10">
                 <h1 className="md:text-[22px] text-[21px] font-semibold mb-4 text-center">Ready to join the community?</h1>
-                <p className="mb-4 text-center text-sm">Get exclusive access from inside info to perks
-                by subscribing to our newsletter.</p>
+                <p className="mb-4 text-center text-sm">Sign up to our newsletter to get a chance for a free ticket to the next edition of Palmwine and Friends.</p>
                 <button 
                   onClick={handleClick}
-                  className="px-6 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 transition"
+                  className="px-6 py-2 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition"
                 >
                   Subscribe
                 </button>
