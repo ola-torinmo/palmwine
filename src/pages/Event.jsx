@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
 import '../App.css'
 import Navbar from '../components/Navbar'
 import  Slider  from '../components/Slider'
@@ -22,11 +22,26 @@ import e13 from '../assets/e13.png'
 import e14 from '../assets/e14.png'
 import e15 from '../assets/e15.png'
 import e16 from '../assets/e16.png'
+import { useLocation } from 'react-router-dom';
 
 
 
 
 function Event() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        // Use a timeout to ensure the scroll happens after the component mounts
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 600);
+      }
+    }
+  }, [location]);
+
   return (
     <>
     <ScrollProvider>
@@ -50,7 +65,7 @@ function Event() {
       img15={e15}
       img16={e16}/>
       <Poster/>
-      <Newsletter/>
+      <Newsletter id="target-component"/>
       <Footer/>
 
       </ScrollProvider>

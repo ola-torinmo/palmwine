@@ -9,8 +9,8 @@ const Jumbotron = () => {
   // },[])
 
   return (
-    <div className='mt-[24%]'>
-        <img src={jumbo} className='w-full bg-gray-500 bg-blend-multiply' />
+    <div className='md:mt-[34%] mt-[40%]'>
+        <img src={jumbo} className='w-full bg-gray-500 bg-blend-multiply object-cover ' />
     </div>
   )
 }

@@ -4,7 +4,7 @@ import 'aos/dist/aos.css'
 import poster from '../assets/poster.png'
 import poster2 from '../assets/poster2.png'
 import poster3 from '../assets/poster3.png'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { useScroll } from './ScrollContext';
 
 const Poster = () => {
@@ -45,12 +45,12 @@ const Poster = () => {
                 <img src={poster3} className='md:w-[750px] w-[95%] md:h-[750px] h-[900px] md:my-[15%] my-[15%] mx-auto' />
             </div>
             <div className=''> 
-                <Link to="/">
+                
                         <button onClick={() =>scrollToSection(subscribe) } className="bg-[#C4942D] text-[#101010] w-[80%] h-[50px] rounded-full text-md   md:mb-[0] mb-[5%] ml-[10%]  ">
                           
                           <p className=" font-bold" > Subscribe to our newsletter</p>
                         </button>
-                </Link>
+              
             </div>
         </div>
       </div>

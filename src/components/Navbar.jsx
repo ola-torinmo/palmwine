@@ -26,7 +26,7 @@ const Navbar = ()=>{
                 </ul>
                 <a href="https://tix.africa/discover/plmwndfrns" target="_blank" rel="noopener noreferrer">
                     <button className="bg-[#C4942D] text-[#101010] w-[131px] h-[40px] rounded-full text-sm ml-[160%] flex">
-                        <img src={tick} className="mr-1 ml-7 mt-3" alt="Tick icon" />
+                        <img src={tick} className="mr-1 ml-8 mt-3 w-4 h-4" alt="Tick icon" />
                         <p className="mt-2.5 font-medium">Tickets</p>
                     </button>
                 </a>

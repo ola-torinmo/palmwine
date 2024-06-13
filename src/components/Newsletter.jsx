@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { useScroll } from './ScrollContext';
-const Newsletter = () => {
+
+
+const Newsletter = ({ id }) => {
 
   const subscribe = useScroll();
-
-
+  
     const  [formState, setFormState] =useState({
       email: ''
     });
@@ -15,10 +16,6 @@ const Newsletter = () => {
   const submitHandler=(event)=>{
     event.preventDefault();
 
-
-
-
-    
   // Data to be sent to the server
   const userData = {
     
@@ -42,24 +39,14 @@ const Newsletter = () => {
       })
       .then(data => {
         console.log('Success:', data);
+        alert('Email sent');
       })
       .catch(error => {
         console.error('There was a problem with your fetch operation:', error);
+        alert('Failed to send email')
       });
 
-
-    // formState.email
-    // const config ={
-    //   SecureToken : '8aa058b5-701d-4c09-947f-9c6492d7f649',
-    //   From :'ajibadeemmanuel58@gmail.com ' ,
-    //   To : 'torinmo.ade@gmail.com',
-      
-    //   Subject : "This user will show up!",
-    //   Body : `${formState.name} connected to you over mail`
-
-    // };
-    
-    // if (window.Email) {
+      // if (window.Email) {
     //   window.Email.send(config)
     //     .then((response) => {
     //       console.log(response)
@@ -75,6 +62,7 @@ const Newsletter = () => {
     //   alert('Email service is not available');
     // }
 
+    
     // Reset the form state
     setFormState({
       email: ''
@@ -84,12 +72,14 @@ const Newsletter = () => {
 
   };
 
+  
+
   return (
     <section className="bg-[#121212]">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-12 lg:px-6">
             <div className="mx-auto max-w-screen-md sm:text-center">
                 <p className="mx-auto mb-4 max-w-2xl font-light  md:mb-6 text-white text-[16px] text-center">Subscribe to our newsletter to stay updated with our latest events.</p>
-                <form ref={subscribe} onSubmit={submitHandler}>
+                <form ref={subscribe} onSubmit={submitHandler} id={id} >
                     <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                         <div className="relative w-full">
                             <label for="email" className="hidden mb-2 text-sm font-medium text-gray-900 ">Email address</label>

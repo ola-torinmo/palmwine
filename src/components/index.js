@@ -9,6 +9,7 @@ import Newsletter from "./Newsletter";
 import PTposter from "./PTposter";
 import PTabout from "./PTabout";
 import Footer from "./Footer";
+import modal from "./modal"
 import { ScrollProvider } from './ScrollContext';
 
-export {Navbar,Hero,Jumbotron,Meet,Edition,Footer,Slider,Poster,Newsletter,PTposter,PTabout,ScrollProvider}
+export {Navbar,Hero,Jumbotron,Meet,Edition,Footer,Slider,Poster,Newsletter,PTposter,PTabout,ScrollProvider,modal}

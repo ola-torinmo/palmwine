@@ -18,9 +18,12 @@ const PTabout = () => {
                 <img src={aboutpt2} className='mb-10 ' />
             </div>
             <h1 className='text-white md:text-[60px] text-[35px] mb-5'>More than a party, its an experience</h1>
-            <p className='text-white md:text-[18px] text-[16px]'>We make movies, come star in them.</p>
+            <p className='text-white md:text-[18px] text-[14px] md:w-[900px]'>There has been a significant decline in people actually partying, especially for a vibrant, energetic, youth-centric 
+              community in Lagos. Palmwine & Friends is what you call a party! With everything for everyone ranging from 
+              Afrobeats to Amapiano to Swedish house, we continue to create experiences for our community. 
+              We make movies, come star in them if you care to join us..</p>
         </div>
-    </div>
+    </div> 
   )
 }
 
