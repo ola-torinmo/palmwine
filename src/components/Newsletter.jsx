@@ -24,7 +24,7 @@ const Newsletter = ({ id }) => {
   };
 
       // POST data to the server
-      fetch('https://express-palmwine.onrender.com', {
+      fetch('https://express-palmwine.onrender.com/send-email', {
         method: 'POST', // Specify the request method
         headers: {
           'Content-Type': 'application/json' // Specify the content type

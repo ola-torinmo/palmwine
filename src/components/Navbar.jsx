@@ -36,7 +36,7 @@ const Navbar = ()=>{
                     
                 </div>
                 <div className='md:hidden '>
-                 <a href="https://tix.africa/discover/plmwndfrns" target="_blank" rel="noopener noreferrer">
+                 <a href="https://tix.africa/palmwnfrns" target="_blank" rel="noopener noreferrer">
                     <button className="bg-[#C4942D] text-[#101010] w-[100px] h-[35px] rounded-full text-md md:ml-[0%] ml-[2%] flex mt-2 ">
                        <img src={tick} className="mr-1 ml-3.5 mt-2.5" />
                        <p className="mt-1.5 font-medium" > Tickets</p>
