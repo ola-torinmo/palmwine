@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import poster from '../assets/palmwinemin.jpg'
+import poster from '../assets/palmwinehalloween.jpg'
 
 const PTposter = () => {
   useEffect(()=>{

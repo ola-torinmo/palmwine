@@ -3,9 +3,10 @@ import edi1 from '../assets/1.png'
 import edi2 from '../assets/2.png'
 import edi3 from '../assets/3.png'
 import edi4 from '../assets/4.png'
-import { Link } from 'react-router-dom';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom';
+
 
 const Edition = () => {
   useEffect(()=>{

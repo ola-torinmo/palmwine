@@ -1,9 +1,9 @@
 import React, { useEffect }  from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
-import poster from '../assets/palmwinemin.jpg'
-import poster2 from '../assets/poster2.png'
-import poster3 from '../assets/1frame.png'
+import poster from '../assets/palmwinehalloween.jpg'
+// import poster2 from '../assets/poster2.png'
+// import poster3 from '../assets/1frame.png'
 import inside from '../assets/inside.png'
 // import { Link } from 'react-router-dom';
 import { useScroll } from './ScrollContext';
@@ -37,8 +37,8 @@ const Poster = () => {
                 <h1 className='text-white text-[32px] mb-[20px]'>Featured</h1>
                 <p className='text-[#F3F3F3] opacity-75 text-[18px] mb-[20px]'>Upcoming</p>
                 <img src={logo} className="md:h-[100px] h-[40px] md:w-[190px] w-[80px] mb-[20px] mx-auto " alt="" />
-                <h1 className='text-white text-[25px] '>JULY</h1>
-                <h1 className='text-white text-[25px] mb-[20px]'>5th</h1>
+                <h1 className='text-white text-[25px] '>October</h1>
+                <h1 className='text-white text-[25px] mb-[20px]'>25th</h1>
                 <p className='text-[#F3F3F3] opacity-75 text-[18px] w-[378px] mb-[20px]'>Get inside info and community perks from 
                 free tickets to free drinks at any of our events</p>
               </div>
@@ -57,8 +57,8 @@ const Poster = () => {
                 <h1 className='text-white text-[32px] mb-[20px]'>Featured</h1>
                 <p className='text-[#F3F3F3] opacity-75 text-[18px] mb-[20px]'>Upcoming</p>
                 <img src={logo} className="md:h-[100px] h-[90px] md:w-[190px] w-[150px] mb-[20px] mx-auto " alt="" />
-                <h1 className='text-white text-[25px] '>JULY</h1>
-                <h1 className='text-white text-[25px] mb-[60px]'>5th</h1> 
+                <h1 className='text-white text-[25px] '>October</h1>
+                <h1 className='text-white text-[25px] mb-[60px]'>25th</h1> 
 
             </div>
             <div>

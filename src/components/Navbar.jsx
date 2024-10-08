@@ -24,7 +24,7 @@ const Navbar = ()=>{
                     <li><Link to="/event">Events</Link></li>
                     
                 </ul>
-                <a href="https://tix.africa/discover/plmwndfrns" target="_blank" rel="noopener noreferrer">
+                <a href="https://tix.africa/discover/palmwnfrn" target="_blank" rel="noopener noreferrer">
                     <button className="bg-[#C4942D] text-[#101010] w-[131px] h-[40px] rounded-full text-sm ml-[160%] flex">
                         <img src={tick} className="mr-1 ml-8 mt-3 w-4 h-4" alt="Tick icon" />
                         <p className="mt-2.5 font-medium">Tickets</p>
@@ -36,7 +36,7 @@ const Navbar = ()=>{
                     
                 </div>
                 <div className='md:hidden '>
-                 <a href="https://tix.africa/palmwnfrns" target="_blank" rel="noopener noreferrer">
+                 <a href="https://tix.africa/discover/palmwnfrn" target="_blank" rel="noopener noreferrer">
                     <button className="bg-[#C4942D] text-[#101010] w-[100px] h-[35px] rounded-full text-md md:ml-[0%] ml-[2%] flex mt-2 ">
                        <img src={tick} className="mr-1 ml-3.5 mt-2.5" />
                        <p className="mt-1.5 font-medium" > Tickets</p>
